@@ -117,6 +117,7 @@ section > div {
 
 .experience-cards {
   margin: 0 auto;
+  
 }
 @media only screen and (max-width: 550px) {
   .experience-cards {
@@ -141,6 +142,7 @@ section > div {
   border-radius: 13px;
   contain: content;
   margin: 4em auto 36px;
+  
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 15%), 2px 2px 7px rgba(0, 0, 0, 14%),
     3px 3px 8px rgba(0, 0, 0, 13%), 4px 4px 9px rgba(0, 0, 0, 12%);
   z-index: 1;
@@ -189,13 +191,16 @@ ul ol {
 }
 
 .card1 .featured-image {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   width: 100%;
-  height: 300px;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -584,7 +589,7 @@ ul ol {
 .blog-slider__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   opacity: 0;
   border-radius: 20px;
